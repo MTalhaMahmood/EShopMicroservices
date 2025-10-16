@@ -28,6 +28,9 @@ services:
   distributedcache:
     image: redis
 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server
+
   catalog.api:
     build:
       context: ./Services/Catalog/Catalog.API  # The path to your Catalog.API project
